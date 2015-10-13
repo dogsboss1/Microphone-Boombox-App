@@ -15,6 +15,11 @@
 		A4E8A4D91BCD15660015826D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A4D71BCD15660015826D /* LaunchScreen.storyboard */; };
 		A4E8A4E41BCD15670015826D /* Microphone_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E8A4E31BCD15670015826D /* Microphone_AppTests.m */; };
 		A4E8A4EF1BCD15670015826D /* Microphone_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E8A4EE1BCD15670015826D /* Microphone_AppUITests.m */; };
+		A4E8A4FD1BCD2C210015826D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8A4FC1BCD2C210015826D /* AVFoundation.framework */; };
+		A4E8A5031BCD2EDD0015826D /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A4FF1BCD2EDD0015826D /* up.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A5041BCD2EDD0015826D /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5001BCD2EDD0015826D /* down.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A5051BCD2EDD0015826D /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5011BCD2EDD0015826D /* left.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A5061BCD2EDD0015826D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5021BCD2EDD0015826D /* right.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		A4E8A4EA1BCD15670015826D /* Microphone AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Microphone AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E8A4EE1BCD15670015826D /* Microphone_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Microphone_AppUITests.m; sourceTree = "<group>"; };
 		A4E8A4F01BCD15670015826D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E8A4FC1BCD2C210015826D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A4E8A4FF1BCD2EDD0015826D /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = up.png; path = Images/up.png; sourceTree = "<group>"; };
+		A4E8A5001BCD2EDD0015826D /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = Images/down.png; sourceTree = "<group>"; };
+		A4E8A5011BCD2EDD0015826D /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = Images/left.png; sourceTree = "<group>"; };
+		A4E8A5021BCD2EDD0015826D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = Images/right.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E8A4FD1BCD2C210015826D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +92,8 @@
 		A4E8A4BD1BCD15650015826D = {
 			isa = PBXGroup;
 			children = (
+				A4E8A4FC1BCD2C210015826D /* AVFoundation.framework */,
 				A4E8A4C81BCD15660015826D /* Microphone App */,
-				A4E8A4E21BCD15660015826D /* Microphone AppTests */,
-				A4E8A4ED1BCD15670015826D /* Microphone AppUITests */,
-				A4E8A4C71BCD15660015826D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,19 +105,18 @@
 				A4E8A4EA1BCD15670015826D /* Microphone AppUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A4E8A4C81BCD15660015826D /* Microphone App */ = {
 			isa = PBXGroup;
 			children = (
+				A4E8A4FE1BCD2ECC0015826D /* Images */,
 				A4E8A4CC1BCD15660015826D /* AppDelegate.h */,
 				A4E8A4CD1BCD15660015826D /* AppDelegate.m */,
 				A4E8A4CF1BCD15660015826D /* ViewController.h */,
 				A4E8A4D01BCD15660015826D /* ViewController.m */,
 				A4E8A4D21BCD15660015826D /* Main.storyboard */,
-				A4E8A4D51BCD15660015826D /* Assets.xcassets */,
-				A4E8A4D71BCD15660015826D /* LaunchScreen.storyboard */,
-				A4E8A4DA1BCD15660015826D /* Info.plist */,
 				A4E8A4C91BCD15660015826D /* Supporting Files */,
 			);
 			path = "Microphone App";
@@ -117,6 +125,12 @@
 		A4E8A4C91BCD15660015826D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4E8A4D51BCD15660015826D /* Assets.xcassets */,
+				A4E8A4D71BCD15660015826D /* LaunchScreen.storyboard */,
+				A4E8A4DA1BCD15660015826D /* Info.plist */,
+				A4E8A4E21BCD15660015826D /* Microphone AppTests */,
+				A4E8A4ED1BCD15670015826D /* Microphone AppUITests */,
+				A4E8A4C71BCD15660015826D /* Products */,
 				A4E8A4CA1BCD15660015826D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -129,7 +143,7 @@
 				A4E8A4E51BCD15670015826D /* Info.plist */,
 			);
 			path = "Microphone AppTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A4E8A4ED1BCD15670015826D /* Microphone AppUITests */ = {
 			isa = PBXGroup;
@@ -138,6 +152,17 @@
 				A4E8A4F01BCD15670015826D /* Info.plist */,
 			);
 			path = "Microphone AppUITests";
+			sourceTree = SOURCE_ROOT;
+		};
+		A4E8A4FE1BCD2ECC0015826D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A4E8A4FF1BCD2EDD0015826D /* up.png */,
+				A4E8A5001BCD2EDD0015826D /* down.png */,
+				A4E8A5011BCD2EDD0015826D /* left.png */,
+				A4E8A5021BCD2EDD0015826D /* right.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +268,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E8A5031BCD2EDD0015826D /* up.png in Resources */,
 				A4E8A4D91BCD15660015826D /* LaunchScreen.storyboard in Resources */,
+				A4E8A5061BCD2EDD0015826D /* right.png in Resources */,
+				A4E8A5051BCD2EDD0015826D /* left.png in Resources */,
 				A4E8A4D61BCD15660015826D /* Assets.xcassets in Resources */,
 				A4E8A4D41BCD15660015826D /* Main.storyboard in Resources */,
+				A4E8A5041BCD2EDD0015826D /* down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Microphone App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KGC.Microphone-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Microphone App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KGC.Microphone-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
