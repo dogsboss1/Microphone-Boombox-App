@@ -24,4 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)stopButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)testButtonPressed:(UIButton *)sender {
+}
 @end

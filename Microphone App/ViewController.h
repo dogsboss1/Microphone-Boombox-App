@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
+- (IBAction)startButtonPressed:(UIButton *)sender;
+- (IBAction)stopButtonPressed:(UIButton *)sender;
+- (IBAction)testButtonPressed:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *speakersLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *speakersImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *micLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *micImage;
 
 @end
 
