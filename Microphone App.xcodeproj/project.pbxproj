@@ -102,7 +102,6 @@
 		A4E8A4BD1BCD15650015826D = {
 			isa = PBXGroup;
 			children = (
-				A4E8A4FC1BCD2C210015826D /* AVFoundation.framework */,
 				A4E8A4C81BCD15660015826D /* Microphone App */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +135,7 @@
 		A4E8A4C91BCD15660015826D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4E8A5121BCE8B470015826D /* Frameworks */,
 				A4E8A4D51BCD15660015826D /* Assets.xcassets */,
 				A4E8A4D71BCD15660015826D /* LaunchScreen.storyboard */,
 				A4E8A4DA1BCD15660015826D /* Info.plist */,
@@ -186,6 +186,14 @@
 				A4E8A5071BCD3C8C0015826D /* testing audio.mp3 */,
 			);
 			name = Audio;
+			sourceTree = "<group>";
+		};
+		A4E8A5121BCE8B470015826D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4E8A4FC1BCD2C210015826D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
