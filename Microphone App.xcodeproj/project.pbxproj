@@ -20,6 +20,11 @@
 		A4E8A5041BCD2EDD0015826D /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5001BCD2EDD0015826D /* down.png */; settings = {ASSET_TAGS = (); }; };
 		A4E8A5051BCD2EDD0015826D /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5011BCD2EDD0015826D /* left.png */; settings = {ASSET_TAGS = (); }; };
 		A4E8A5061BCD2EDD0015826D /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5021BCD2EDD0015826D /* right.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A5081BCD3C8C0015826D /* testing audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5071BCD3C8C0015826D /* testing audio.mp3 */; settings = {ASSET_TAGS = (); }; };
+		A4E8A50D1BCD42E30015826D /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A50A1BCD42E30015826D /* green.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A50E1BCD42E30015826D /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A50B1BCD42E30015826D /* orange.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A50F1BCD42E30015826D /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A50C1BCD42E30015826D /* red.png */; settings = {ASSET_TAGS = (); }; };
+		A4E8A5111BCD44760015826D /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E8A5101BCD44760015826D /* white.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		A4E8A5001BCD2EDD0015826D /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = Images/down.png; sourceTree = "<group>"; };
 		A4E8A5011BCD2EDD0015826D /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = Images/left.png; sourceTree = "<group>"; };
 		A4E8A5021BCD2EDD0015826D /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = Images/right.png; sourceTree = "<group>"; };
+		A4E8A5071BCD3C8C0015826D /* testing audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "testing audio.mp3"; path = "Audio/testing audio.mp3"; sourceTree = "<group>"; };
+		A4E8A50A1BCD42E30015826D /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = Images/green.png; sourceTree = "<group>"; };
+		A4E8A50B1BCD42E30015826D /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange.png; path = Images/orange.png; sourceTree = "<group>"; };
+		A4E8A50C1BCD42E30015826D /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = Images/red.png; sourceTree = "<group>"; };
+		A4E8A5101BCD44760015826D /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = Images/white.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 		A4E8A4C81BCD15660015826D /* Microphone App */ = {
 			isa = PBXGroup;
 			children = (
+				A4E8A5091BCD3C8F0015826D /* Audio */,
 				A4E8A4FE1BCD2ECC0015826D /* Images */,
 				A4E8A4CC1BCD15660015826D /* AppDelegate.h */,
 				A4E8A4CD1BCD15660015826D /* AppDelegate.m */,
@@ -157,12 +168,24 @@
 		A4E8A4FE1BCD2ECC0015826D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A4E8A5101BCD44760015826D /* white.png */,
+				A4E8A50A1BCD42E30015826D /* green.png */,
+				A4E8A50B1BCD42E30015826D /* orange.png */,
+				A4E8A50C1BCD42E30015826D /* red.png */,
 				A4E8A4FF1BCD2EDD0015826D /* up.png */,
 				A4E8A5001BCD2EDD0015826D /* down.png */,
 				A4E8A5011BCD2EDD0015826D /* left.png */,
 				A4E8A5021BCD2EDD0015826D /* right.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		A4E8A5091BCD3C8F0015826D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A4E8A5071BCD3C8C0015826D /* testing audio.mp3 */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +255,7 @@
 				TargetAttributes = {
 					A4E8A4C51BCD15650015826D = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = M2GNA6RHBK;
 					};
 					A4E8A4DE1BCD15660015826D = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -271,10 +295,15 @@
 				A4E8A5031BCD2EDD0015826D /* up.png in Resources */,
 				A4E8A4D91BCD15660015826D /* LaunchScreen.storyboard in Resources */,
 				A4E8A5061BCD2EDD0015826D /* right.png in Resources */,
+				A4E8A50E1BCD42E30015826D /* orange.png in Resources */,
+				A4E8A50D1BCD42E30015826D /* green.png in Resources */,
+				A4E8A5111BCD44760015826D /* white.png in Resources */,
 				A4E8A5051BCD2EDD0015826D /* left.png in Resources */,
 				A4E8A4D61BCD15660015826D /* Assets.xcassets in Resources */,
 				A4E8A4D41BCD15660015826D /* Main.storyboard in Resources */,
+				A4E8A50F1BCD42E30015826D /* red.png in Resources */,
 				A4E8A5041BCD2EDD0015826D /* down.png in Resources */,
+				A4E8A5081BCD3C8C0015826D /* testing audio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,11 +471,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Microphone App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KGC.Microphone-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -454,11 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Microphone App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KGC.Microphone-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

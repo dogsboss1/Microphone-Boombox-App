@@ -14,6 +14,12 @@
 - (IBAction)startButtonPressed:(UIButton *)sender;
 - (IBAction)stopButtonPressed:(UIButton *)sender;
 - (IBAction)testButtonPressed:(UIButton *)sender;
+- (IBAction)playBackButtonPressed:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
+@property (weak, nonatomic) IBOutlet UIButton *playBackButton;
 
 @property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
 
