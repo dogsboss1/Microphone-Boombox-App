@@ -16,13 +16,16 @@
 @end
 
 @implementation ViewController
-@synthesize stopButton, startButton, testButton, playBackButton;
+@synthesize stopButton, startButton, testButton, playBackButton, infomationButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [stopButton setEnabled:NO];
     [playBackButton setEnabled:NO];
+    self.informationView.hidden = YES;
+    
+    self.shouldInfoViewDisplay = NO;
     
     NSArray *pathComponents = [NSArray arrayWithObjects:
                                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject], @"MyAudioMemo.m4a",
@@ -45,11 +48,19 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChangeNotification:) name:UIDeviceOrientationDidChangeNotification object:nil];
     
-    //self.micImage.image = [UIImage imageNamed:@"left"];
+    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTapGesture:)];
+    [self.view addGestureRecognizer:singleTapGestureRecognizer];
     
     [self updateOutlets];
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)handleSingleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer{
+    if (self.informationView.isHidden == NO) {
+        self.informationView.hidden = YES;
+    }
+    [self updateOutlets];
 }
 
 - (void) updateOutlets {
@@ -64,7 +75,16 @@
     
     [playBackButton setBackgroundImage:[UIImage imageNamed:@"white"] forState:UIControlStateDisabled];
     [playBackButton setBackgroundImage:[UIImage imageNamed:@"orange"] forState:UIControlStateNormal];
-   
+    
+    if (self.shouldInfoViewDisplay == YES) {
+        [infomationButton setEnabled:NO];
+        self.informationView.hidden = NO;
+        self.shouldInfoViewDisplay = NO;
+    }
+    else {
+        [infomationButton setEnabled:YES];
+        self.informationView.hidden = YES;
+    }
 }
 
 - (void) deviceOrientationDidChangeNotification:(NSNotification *)note {
@@ -143,6 +163,11 @@
         [player setDelegate:self];
         [player play];
     }
+    [self updateOutlets];
+}
+
+- (IBAction)infomatinButtonPressed:(UIButton *)sender {
+    self.shouldInfoViewDisplay = YES;
     [self updateOutlets];
 }
 @end
