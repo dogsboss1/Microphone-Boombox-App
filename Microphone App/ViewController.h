@@ -16,18 +16,24 @@
 - (IBAction)testButtonPressed:(UIButton *)sender;
 - (IBAction)playBackButtonPressed:(UIButton *)sender;
 
+- (IBAction)infomatinButtonPressed:(UIButton *)sender;
+
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
 @property (weak, nonatomic) IBOutlet UIButton *testButton;
 @property (weak, nonatomic) IBOutlet UIButton *playBackButton;
 
-@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
+@property (weak, nonatomic) IBOutlet UIButton *infomationButton;
 
 @property (weak, nonatomic) IBOutlet UILabel *speakersLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *speakersImage;
 
 @property (weak, nonatomic) IBOutlet UILabel *micLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *micImage;
+
+@property (weak, nonatomic) IBOutlet UIView *informationView;
+
+@property BOOL shouldInfoViewDisplay;
 
 @end
 
