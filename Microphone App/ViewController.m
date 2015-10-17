@@ -80,10 +80,14 @@
         [infomationButton setEnabled:NO];
         self.informationView.hidden = NO;
         self.shouldInfoViewDisplay = NO;
+        self.micLabel.text = @"";
+        self.speakersLabel.text = @"";
     }
     else {
         [infomationButton setEnabled:YES];
         self.informationView.hidden = YES;
+        self.micLabel.text = @"Mic";
+        self.speakersLabel.text = @"Speaker";
     }
 }
 
