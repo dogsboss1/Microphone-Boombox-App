@@ -139,6 +139,9 @@
         [recorder record];
         [startButton setEnabled:NO];
     }
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
+    [player setDelegate:self];
+    [player play];
     
     [stopButton setEnabled:YES];
     [playBackButton setEnabled:NO];

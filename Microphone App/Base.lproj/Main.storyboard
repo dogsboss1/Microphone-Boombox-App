@@ -100,13 +100,6 @@
                                     <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRD-pJ-AsM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4G-zF-qu4">
-                                <rect key="frame" x="558" y="20" width="22" height="22"/>
-                                <animations/>
-                                <connections>
-                                    <action selector="infomatinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mmd-x1-dQi"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down.png" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-x5-YQh">
                                 <rect key="frame" x="250" y="492" width="100" height="100"/>
                                 <animations/>
@@ -114,42 +107,55 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tP9-tW-Khb">
                                 <rect key="frame" x="156" y="149" width="289" height="302"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Having trouble?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibs-B1-KlG">
-                                        <rect key="frame" x="84" y="8" width="120" height="21"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnE-qb-PRm">
-                                        <rect key="frame" x="8" y="23" width="273" height="257"/>
+                                        <rect key="frame" x="8" y="22" width="273" height="257"/>
                                         <animations/>
                                         <string key="text">Try turning the volume up and clicking test.  If you don't hear, "testing, testing, one, two" then your speakers arn't working.   If you don't hear anything when you press 'play' and your speakers work then you may have an issue with your microphone.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press anywhere to exit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrd-P7-SHt">
-                                        <rect key="frame" x="56" y="281" width="177" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrd-P7-SHt">
+                                        <rect key="frame" x="52" y="281" width="184" height="21"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Press anywhere to exit">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Having trouble?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibs-B1-KlG">
+                                        <rect key="frame" x="81" y="8" width="128" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Nrd-P7-SHt" firstAttribute="centerX" secondItem="vnE-qb-PRm" secondAttribute="centerX" id="Huu-zV-p69"/>
-                                    <constraint firstItem="ibs-B1-KlG" firstAttribute="top" secondItem="tP9-tW-Khb" secondAttribute="topMargin" id="MiN-7h-pq8"/>
-                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="centerY" secondItem="tP9-tW-Khb" secondAttribute="centerY" id="ZyW-SK-AfC"/>
-                                    <constraint firstItem="Nrd-P7-SHt" firstAttribute="leading" secondItem="tP9-tW-Khb" secondAttribute="leading" constant="56" id="f0F-Yp-osW"/>
-                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="leading" secondItem="tP9-tW-Khb" secondAttribute="leadingMargin" id="jKw-N9-4DV"/>
-                                    <constraint firstItem="Nrd-P7-SHt" firstAttribute="top" secondItem="vnE-qb-PRm" secondAttribute="bottom" constant="1" id="ovG-xu-4D4"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nrd-P7-SHt" secondAttribute="bottom" id="sYg-8k-qsI"/>
-                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="trailing" secondItem="tP9-tW-Khb" secondAttribute="trailingMargin" id="sna-aA-OXV"/>
-                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="centerX" secondItem="ibs-B1-KlG" secondAttribute="centerX" id="xg8-2D-ypt"/>
+                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="leading" secondItem="tP9-tW-Khb" secondAttribute="leadingMargin" id="0dr-ev-qh1"/>
+                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="centerY" secondItem="tP9-tW-Khb" secondAttribute="centerY" id="3WX-B6-Men"/>
+                                    <constraint firstItem="ibs-B1-KlG" firstAttribute="top" secondItem="tP9-tW-Khb" secondAttribute="topMargin" id="Dfx-AU-p0d"/>
+                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="trailing" secondItem="tP9-tW-Khb" secondAttribute="trailingMargin" id="KzQ-Fj-I2I"/>
+                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="centerX" secondItem="ibs-B1-KlG" secondAttribute="centerX" id="aLB-2m-leM"/>
+                                    <constraint firstItem="vnE-qb-PRm" firstAttribute="centerX" secondItem="Nrd-P7-SHt" secondAttribute="centerX" id="bkb-uo-N5Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nrd-P7-SHt" secondAttribute="bottom" id="lvX-vt-dR0"/>
+                                    <constraint firstItem="Nrd-P7-SHt" firstAttribute="top" secondItem="vnE-qb-PRm" secondAttribute="bottom" constant="2" id="tA4-g9-MPg"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4G-zF-qu4">
+                                <rect key="frame" x="558" y="20" width="22" height="22"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="infomatinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mmd-x1-dQi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
