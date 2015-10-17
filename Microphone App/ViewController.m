@@ -139,6 +139,7 @@
         [recorder record];
         [startButton setEnabled:NO];
     }
+    
     [stopButton setEnabled:YES];
     [playBackButton setEnabled:NO];
     [self updateOutlets];

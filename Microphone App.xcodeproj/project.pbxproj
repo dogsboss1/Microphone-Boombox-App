@@ -572,6 +572,7 @@
 				A4E8A4F51BCD15670015826D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4E8A4F61BCD15670015826D /* Build configuration list for PBXNativeTarget "Microphone AppTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +581,7 @@
 				A4E8A4F81BCD15670015826D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4E8A4F91BCD15670015826D /* Build configuration list for PBXNativeTarget "Microphone AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +590,7 @@
 				A4E8A4FB1BCD15670015826D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
